@@ -1,19 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-cambiar-contrasena',
   templateUrl: './cambiar-contrasena.page.html',
   styleUrls: ['./cambiar-contrasena.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  standalone: true,
+  imports: [CommonModule, FormsModule, RouterModule]
 })
-export class CambiarContrasenaPage implements OnInit {
+export class CambiarContrasenaPage {
+  passActual: string = '';
+  passNueva: string = '';
+  passConfirm: string = '';
 
-  constructor() { }
+  constructor(private router: Router) {}
 
-  ngOnInit() {
+  cambiarPassword() {
+    if (this.passNueva !== this.passConfirm) {
+      alert('Las contraseñas no coinciden. Inténtalo de nuevo.');
+      return;
+    }
+
+    alert('¡Contraseña cambiada con éxito!');
+    this.router.navigate(['/datos-personales']);
   }
-
 }

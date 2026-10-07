@@ -1,13 +1,22 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>cambiar-contrasena</ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="container">
+  <h2>Cambiar contraseña</h2>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">cambiar-contrasena</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+  <form (ngSubmit)="cambiarPassword()">
+    <div class="form-group">
+      <label>Contraseña actual</label>
+      <input type="password" [(ngModel)]="passActual" name="passActual" placeholder="Ingrese su contraseña actual" required>
+    </div>
+
+    <div class="form-group">
+      <label>Nueva contraseña</label>
+      <input type="password" [(ngModel)]="passNueva" name="passNueva" placeholder="Ingrese su nueva contraseña" required>
+    </div>
+
+    <div class="form-group">
+      <label>Confirmar nueva contraseña</label>
+      <input type="password" [(ngModel)]="passConfirm" name="passConfirm" placeholder="Confirme su nueva contraseña" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+  </form>
+</div>

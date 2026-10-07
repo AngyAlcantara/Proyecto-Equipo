@@ -1,13 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>detalle-pedido</ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="container">
+  <div class="header-status">
+    <h2>Detalle del pedido</h2>
+    <span class="badge">EN PROCESO</span>
+  </div>
+  <p class="order-id">Pedido #PJ-001</p>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">detalle-pedido</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+  <!-- Lista de estados/pasos -->
+  <div class="stepper">
+    <div class="step completed">✓ Pedido recibido</div>
+    <div class="step active">🔄 En proceso</div>
+    <div class="step">⚪ Preparando</div>
+    <div class="step">⚪ Pipa en camino</div>
+    <div class="step">⚪ Entregado</div>
+  </div>
+
+  <!-- Tarjeta con resumen del pedido -->
+  <div class="summary-card">
+    <h3>Resumen del pedido</h3>
+    <p><strong>Cantidad:</strong> 10,000 Litros</p>
+    <p><strong>Dirección:</strong> Calle XXX, Córdoba, Veracruz</p>
+    <p><strong>Fecha:</strong> 25/09/2026</p>
+    <p><strong>Horario:</strong> 9:00 - 11:00</p>
+  </div>
+
+  <button class="btn btn-secondary" routerLink="/datos-personales">Volver al inicio</button>
+</div>
