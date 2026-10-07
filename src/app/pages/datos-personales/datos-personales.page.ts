@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -10,20 +10,41 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, FormsModule, RouterModule]
 })
-export class DatosPersonalesPage {
+export class DatosPersonalesPage implements OnInit {
   editando: boolean = false;
 
-  // Variables iniciales basadas en el wireframe
+  // Variables iniciales
   nombre: string = 'UsuarioX';
   telefono: string = '271 XXXX';
   correo: string = 'correo@email.com';
+
+  ngOnInit() {
+    // Cargar datos previamente guardados en localStorage si existen
+    const usuarioGuardado = localStorage.getItem('usuario_datos');
+    if (usuarioGuardado) {
+      const datos = JSON.parse(usuarioGuardado);
+      this.nombre = datos.nombre || this.nombre;
+      this.telefono = datos.telefono || this.telefono;
+      this.correo = datos.correo || this.correo;
+    }
+  }
 
   activarEdicion() {
     this.editando = true;
   }
 
   guardarCambios() {
+    // Objeto con la información ingresada por el usuario
+    const datosUsuario = {
+      nombre: this.nombre,
+      telefono: this.telefono,
+      correo: this.correo
+    };
+
+    // Guardar en el almacenamiento local del navegador
+    localStorage.setItem('usuario_datos', JSON.stringify(datosUsuario));
+
     this.editando = false;
-    alert('¡Datos personales actualizados correctamente!');
+    alert('¡Datos personales actualizados y guardados correctamente!');
   }
 }

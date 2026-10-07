@@ -1,11 +1,12 @@
 <div class="perfil-container">
-  <!-- Encabezado con Avatar / Usuario -->
+  <!-- Encabezado con Avatar y Datos Dinámicos -->
   <div class="user-header">
     <div class="avatar-circle">
       <span class="avatar-icon">👤</span>
     </div>
-    <h2>UsuarioX</h2>
-    <p class="user-phone">271 XXXX</p>
+    <!-- Aquí se reflejan automáticamente los cambios -->
+    <h2>{{ nombre }}</h2>
+    <p class="user-phone">{{ telefono }}</p>
   </div>
 
   <!-- Menú de Opciones del Perfil -->
