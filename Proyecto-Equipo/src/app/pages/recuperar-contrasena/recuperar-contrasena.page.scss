@@ -1,0 +1,133 @@
+ion-content {
+  --background: #ffffff;
+}
+
+.recovery-container {
+  width: 100%;
+  max-width: 430px;
+
+  margin: 0 auto;
+
+  padding: 20px 36px 40px;
+
+  box-sizing: border-box;
+}
+
+
+/* ENCABEZADO */
+
+.header {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.back-button {
+  --color: #555;
+
+  font-size: 28px;
+
+  margin-left: -12px;
+  margin-right: 2px;
+}
+
+.header-title {
+  color: #555;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+/* TÍTULO */
+
+h1 {
+  margin: 0 0 42px;
+
+  color: #222;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
+/* DESCRIPCIÓN */
+
+.description {
+  margin: 0 0 40px;
+
+  color: #777;
+
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+
+/* CAMPO */
+
+.input-field {
+  --background: #ffffff;
+
+  --border-color: #dddddd;
+  --border-style: solid;
+  --border-width: 1px;
+  --border-radius: 5px;
+
+  --padding-start: 12px;
+  --padding-end: 12px;
+
+  min-height: 60px;
+
+  margin-bottom: 48px;
+
+  color: #333;
+
+  font-size: 14px;
+}
+
+
+/* BOTÓN ENVIAR */
+
+.send-button {
+  --border-color: #dddddd;
+  --border-width: 2px;
+  --border-style: solid;
+  --border-radius: 6px;
+
+  --color: #333;
+
+  height: 64px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  margin: 0;
+}
+
+
+/* TEXTO INFERIOR */
+
+.remember-text {
+  text-align: center;
+
+  margin-top: 50px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* VOLVER AL INICIO */
+
+.back-login-button {
+  display: block;
+
+  margin: 8px auto 0;
+
+  --color: #3880ff;
+
+  font-size: 17px;
+  font-weight: 500;
+}
