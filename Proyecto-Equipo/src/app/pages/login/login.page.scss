@@ -1,0 +1,136 @@
+ion-content {
+  --background: #ffffff;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 20px 28px 30px;
+  box-sizing: border-box;
+}
+
+/* LOGO */
+
+.logo {
+  width: 145px;
+  height: 145px;
+
+  border: 2px solid #777;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 25px;
+
+  color: #111;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* FORMULARIO */
+
+.form-container {
+  width: 100%;
+}
+
+ion-label {
+  display: block;
+
+  margin-top: 10px;
+  margin-bottom: 8px;
+
+  color: #333;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* INPUTS */
+
+.input-field {
+  --background: #ffffff;
+
+  --border-color: #dddddd;
+  --border-style: solid;
+  --border-width: 1px;
+  --border-radius: 5px;
+
+  --padding-start: 10px;
+  --padding-end: 10px;
+
+  min-height: 48px;
+
+  margin-bottom: 8px;
+
+  color: #333;
+}
+
+
+/* CONTRASEÑA */
+
+.forgot-password {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin: 13px 0 20px;
+
+  color: #333;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.forgot-password ion-checkbox {
+  --size: 21px;
+
+  --checkbox-background-checked: #333;
+  --border-color-checked: #333;
+}
+
+
+/* BOTONES */
+
+.login-button,
+.register-button {
+  --border-color: #c9c9c9;
+  --border-width: 2px;
+  --border-style: solid;
+  --border-radius: 10px;
+
+  --color: #111;
+
+  height: 52px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  margin: 0;
+}
+
+
+/* TEXTO */
+
+.create-text {
+  text-align: center;
+
+  margin: 14px 0;
+
+  color: #333;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* CREAR CUENTA */
+
+.register-button {
+  margin-bottom: 10px;
+}
