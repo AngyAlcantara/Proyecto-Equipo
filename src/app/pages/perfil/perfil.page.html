@@ -1,0 +1,44 @@
+<div class="perfil-container">
+  <!-- Encabezado con Avatar / Usuario -->
+  <div class="user-header">
+    <div class="avatar-circle">
+      <span class="avatar-icon">👤</span>
+    </div>
+    <h2>UsuarioX</h2>
+    <p class="user-phone">271 XXXX</p>
+  </div>
+
+  <!-- Menú de Opciones del Perfil -->
+  <div class="profile-menu">
+    <button class="menu-item" routerLink="/datos-personales">
+      <div class="menu-left">
+        <span class="icon">👤</span>
+        <span>Datos personales</span>
+      </div>
+      <span class="arrow">›</span>
+    </button>
+
+    <button class="menu-item">
+      <div class="menu-left">
+        <span class="icon">📍</span>
+        <span>Mis direcciones</span>
+      </div>
+      <span class="arrow">›</span>
+    </button>
+
+    <button class="menu-item" routerLink="/cambiar-contrasena">
+      <div class="menu-left">
+        <span class="icon">🔒</span>
+        <span>Cambiar contraseña</span>
+      </div>
+      <span class="arrow">›</span>
+    </button>
+
+    <button class="menu-item logout" (click)="cerrarSesion()">
+      <div class="menu-left">
+        <span class="icon">🚪</span>
+        <span>Cerrar sesión</span>
+      </div>
+    </button>
+  </div>
+</div>
