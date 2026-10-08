@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Tarjeta contenedora del celular/pantalla */
+.card-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  padding: 30px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+}
+
+/* Encabezado superior */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.back-icon {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000000;
+}
+
+.app-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+}
+
+/* Título de la pantalla */
+.screen-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+/* Etiqueta / Nombre decorativo */
+.subtitle-tag {
+  text-align: center;
+  font-size: 24px;
+  color: #1e88e5;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+/* Formulario e Inpust */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #1e88e5;
+}
+
+.input-group input::placeholder {
+  color: #999999;
+}
+
+/* Botón de envío */
+.submit-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #000000;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #f0f0f0;
+}
