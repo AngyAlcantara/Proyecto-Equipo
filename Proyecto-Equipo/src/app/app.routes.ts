@@ -21,5 +21,9 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/recuperar-contrasena/recuperar-contrasena.page')
         .then((m) => m.RecuperarContrasenaPage),
+  },  {
+    path: 'resumen-pedido',
+    loadComponent: () => import('./pages/resumen-pedido/resumen-pedido.page').then( m => m.ResumenPedidoPage)
   },
+
 ];
