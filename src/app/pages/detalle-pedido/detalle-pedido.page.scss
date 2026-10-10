@@ -1,0 +1,94 @@
+.container {
+  padding: 20px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.header-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .badge {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+}
+
+.order-id {
+  color: #666;
+  font-size: 14px;
+  margin: 6px 0 20px 0;
+}
+
+/* Stepper / Pasos del pedido */
+.stepper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 10px;
+
+  .step {
+    font-size: 14px;
+    color: #999;
+
+    &.completed {
+      color: #28a745;
+      font-weight: 600;
+    }
+
+    &.active {
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}
+
+/* Tarjeta del resumen */
+.summary-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+
+  h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 6px;
+  }
+
+  p {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #444;
+
+    strong {
+      color: #000;
+    }
+  }
+}
+
+.btn-secondary {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #e2e8f0;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}

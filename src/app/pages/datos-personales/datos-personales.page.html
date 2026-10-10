@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>Datos personales</h2>
+
+  <!-- Formulario de datos -->
+  <form (ngSubmit)="guardarCambios()">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" [(ngModel)]="nombre" name="nombre" [disabled]="!editando" required>
+    </div>
+
+    <div class="form-group">
+      <label>Teléfono</label>
+      <input type="tel" [(ngModel)]="telefono" name="telefono" [disabled]="!editando" required>
+    </div>
+
+    <div class="form-group">
+      <label>Correo</label>
+      <input type="email" [(ngModel)]="correo" name="correo" [disabled]="!editando" required>
+    </div>
+
+    <button type="button" *ngIf="!editando" class="btn btn-outline" (click)="activarEdicion()">
+      Editar datos
+    </button>
+    
+    <button type="submit" *ngIf="editando" class="btn btn-primary">
+      Guardar
+    </button>
+  </form>
+</div>
