@@ -1,0 +1,159 @@
+<ion-header>
+
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+
+      <ion-back-button
+        defaultHref="/solicitar-pipa">
+      </ion-back-button>
+
+    </ion-buttons>
+
+    <ion-title>Mis direcciones</ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <div class="contenedor">
+
+    <h1>Direcciones de entrega</h1>
+
+    <p class="descripcion">
+      Selecciona dónde quieres recibir tu servicio.
+    </p>
+
+
+    <!-- DIRECCIÓN GUARDADA -->
+
+    <div
+      class="direccion"
+      [class.seleccionada]="direccionSeleccionada === 1"
+      (click)="seleccionarDireccion(1)">
+
+      <div class="icono-direccion">
+
+        <ion-icon
+          name="location-outline">
+        </ion-icon>
+
+      </div>
+
+
+      <div class="informacion">
+
+        <h3>Mi domicilio</h3>
+
+        <p>
+          Selecciona esta dirección para recibir tu pipa.
+        </p>
+
+      </div>
+
+
+      <ion-icon
+        *ngIf="direccionSeleccionada === 1"
+        class="check"
+        name="checkmark-circle">
+      </ion-icon>
+
+    </div>
+
+
+    <!-- AGREGAR DIRECCIÓN -->
+
+    <ion-button
+      expand="block"
+      fill="outline"
+      class="boton-agregar"
+      (click)="nuevaDireccion()">
+
+      <ion-icon
+        slot="start"
+        name="add-outline">
+      </ion-icon>
+
+      Agregar dirección
+
+    </ion-button>
+
+
+    <!-- FORMULARIO -->
+
+    <div
+      class="formulario"
+      *ngIf="mostrarFormulario">
+
+      <h2>Nueva dirección</h2>
+
+
+      <!-- DIRECCIÓN -->
+
+      <ion-input
+        label="Dirección"
+        labelPlacement="stacked"
+        placeholder="Calle, número y colonia"
+        [(ngModel)]="direccion">
+      </ion-input>
+
+
+      <!-- REFERENCIA -->
+
+      <ion-input
+        label="Referencia"
+        labelPlacement="stacked"
+        placeholder="Ej. Casa azul">
+      </ion-input>
+
+
+      <!-- TELÉFONO -->
+
+      <ion-input
+        type="tel"
+        label="Teléfono"
+        labelPlacement="stacked"
+        placeholder="Número de teléfono"
+        [(ngModel)]="telefono">
+      </ion-input>
+
+
+      <!-- INDICACIONES -->
+
+      <ion-textarea
+        label="Indicaciones adicionales"
+        labelPlacement="stacked"
+        placeholder="Alguna referencia para encontrar el domicilio..."
+        [(ngModel)]="indicaciones">
+      </ion-textarea>
+
+
+      <ion-button
+        expand="block"
+        class="boton-guardar"
+        (click)="guardarDireccion()">
+
+        Guardar dirección
+
+      </ion-button>
+
+    </div>
+
+
+    <!-- CONTINUAR -->
+
+    <ion-button
+      expand="block"
+      class="boton-continuar"
+      routerLink="/solicitar-pipa">
+
+      Continuar
+
+    </ion-button>
+
+  </div>
+
+</ion-content>
