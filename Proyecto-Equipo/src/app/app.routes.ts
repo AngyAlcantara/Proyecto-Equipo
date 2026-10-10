@@ -2,14 +2,11 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
+    path: '',
+    redirectTo: 'inicio',
+    pathMatch: 'full',
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
-  },  {
     path: 'solicitar-pipa',
     loadComponent: () => import('./solicitar-pipa/solicitar-pipa.page').then( m => m.SolicitarPipaPage)
   },
@@ -18,4 +15,16 @@ export const routes: Routes = [
     loadComponent: () => import('./mis-direcciones/mis-direcciones.page').then( m => m.MisDireccionesPage)
   },
 
+  {
+    path: 'inicio',
+    loadComponent: () => import('./pages/inicio/inicio.page').then( m => m.InicioPage),
+  },
+  {
+    path: 'direccion',
+    loadComponent: () => import('./pages/direccion/direccion.page').then( m => m.DireccionPage),
+  },
+  {
+    path: 'pedidos',
+    loadComponent: () => import('./pages/pedidos/pedidos.page').then( m => m.PedidosPage),
+  },
 ];

@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f5f5f5;">
+    <div style="width: 100%; max-width: 360px; min-height: 520px; border: 1px solid #e0e0e0; border-radius: 12px; padding: 24px; background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.08); display: flex; flex-direction: column; justify-content: space-between;">
+      
+      <div>
+        <h2 style="margin-top: 0; font-size: 1.5rem; color: #000;"><strong>Mis pedidos</strong></h2>
+
+        <div style="display: flex; gap: 12px; margin-top: 15px; margin-bottom: 20px;">
+          <ion-button fill="outline" color="medium" size="small" style="--border-radius: 6px; text-transform: none; color: #333;">Todos</ion-button>
+          <ion-button fill="outline" color="medium" size="small" style="--border-radius: 6px; text-transform: none; color: #333;">Activos</ion-button>
+        </div>
+
+        <!-- Tarjeta Pedido 1 -->
+        <div style="border: 1px solid #ccc; border-radius: 8px; padding: 12px 16px; margin-bottom: 15px;">
+          <p style="margin: 0; font-weight: bold; color: #000;">#PJ-001</p>
+          <p style="margin: 4px 0; color: #333;">10,000 litros</p>
+          <p style="margin: 4px 0; color: #555; font-weight: bold; font-size: 0.9rem;">EN PROCESO</p>
+          <a href="#" style="color: #3880ff; text-decoration: none; font-size: 0.85rem;">[Detalle del pedido]</a>
+        </div>
+
+        <!-- Tarjeta Pedido 2 -->
+        <div style="border: 1px solid #ccc; border-radius: 8px; padding: 12px 16px; margin-bottom: 15px;">
+          <p style="margin: 0; font-weight: bold; color: #000;">#PJ-000</p>
+          <p style="margin: 4px 0; color: #333;">5,000 litros</p>
+          <p style="margin: 4px 0; color: #2dd36f; font-weight: bold; font-size: 0.9rem;">✓ Entregado</p>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid #222; margin-top: 30px; padding-top: 10px; display: flex; justify-content: space-around; text-align: center;">
+        <div [routerLink]="['/inicio']" style="cursor: pointer; color: #1a233a;">
+          <ion-icon name="home" style="font-size: 26px;"></ion-icon>
+          <div style="font-size: 11px; font-weight: 500;">Inicio</div>
+        </div>
+        <div [routerLink]="['/pedidos']" style="cursor: pointer; color: #1a233a;">
+          <ion-icon name="clipboard" style="font-size: 26px;"></ion-icon>
+          <div style="font-size: 11px; font-weight: 500;">Mis Pedidos</div>
+        </div>
+        <div style="cursor: pointer; color: #1a233a;">
+          <ion-icon name="person" style="font-size: 26px;"></ion-icon>
+          <div style="font-size: 11px; font-weight: 500;">Perfil</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</ion-content>

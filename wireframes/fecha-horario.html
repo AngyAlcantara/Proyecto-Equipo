@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fecha y horario - Pipas Juárez</title>
+  <link rel="stylesheet" href="fecha-horario.css">
+</head>
+<body>
+
+  <main class="card-container">
+    <header class="header">
+      <span class="back-icon" aria-label="Volver">&larr;</span>
+      <div class="header-text">
+        <h1 class="screen-title">Fecha y horario</h1>
+        <h2 class="app-title">Pipas Juárez</h2>
+      </div>
+    </header>
+
+    <form class="schedule-form">
+      <div class="input-group">
+        <label for="fecha">Fecha</label>
+        <input type="text" id="fecha" value="[25/09/2026]" readonly>
+      </div>
+
+      <div class="input-group">
+        <label>Horario</label>
+        <input type="text" class="schedule-option" value="[9:00 - 11:00]" readonly>
+        <input type="text" class="schedule-option" value="[11:0 - 13:00]" readonly>
+      </div>
+
+      <div class="input-group">
+        <label for="otro">Otro</label>
+        <input type="text" id="otro" placeholder="">
+      </div>
+
+      <button type="submit" class="submit-btn">CONTINUAR</button>
+    </form>
+  </main>
+
+</body>
+</html>
