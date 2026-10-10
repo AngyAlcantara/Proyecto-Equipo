@@ -1,20 +1,171 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Pipas Juárez</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!-- BIENVENIDA -->
+  <section class="bienvenida">
+
+    <p class="saludo">Bienvenido</p>
+
+    <h1>Agua a tiempo 💧</h1>
+
+    <p class="descripcion">
+      Solicita tu servicio de agua de manera rápida y sencilla.
+    </p>
+
+  </section>
+
+
+  <!-- SOLICITAR PIPA -->
+  <section class="tarjeta-principal">
+
+    <div class="icono-principal">
+      <ion-icon name="water-outline"></ion-icon>
+    </div>
+
+    <h2>Solicitar una pipa</h2>
+
+    <p>
+      Realiza tu pedido y recibe agua en la dirección que elijas.
+    </p>
+
+    <ion-button
+      expand="block"
+      routerLink="/solicitar-pipa">
+
+      Solicitar pipa
+
+    </ion-button>
+
+  </section>
+
+
+  <!-- ACCESOS RÁPIDOS -->
+  <section class="seccion">
+
+    <h2>Accesos rápidos</h2>
+
+
+    <!-- MIS PEDIDOS -->
+
+    <div class="tarjeta">
+
+      <div class="icono-tarjeta">
+        <ion-icon name="cube-outline"></ion-icon>
+      </div>
+
+      <div class="texto-tarjeta">
+
+        <h3>Mis pedidos</h3>
+
+        <p>
+          Consulta el estado de tus pedidos.
+        </p>
+
+      </div>
+
+      <ion-icon
+        class="flecha"
+        name="chevron-forward-outline">
+      </ion-icon>
+
+    </div>
+
+
+    <!-- MIS DIRECCIONES -->
+
+    <div
+      class="tarjeta"
+      routerLink="/mis-direcciones">
+
+      <div class="icono-tarjeta">
+
+        <ion-icon name="location-outline"></ion-icon>
+
+      </div>
+
+      <div class="texto-tarjeta">
+
+        <h3>Mis direcciones</h3>
+
+        <p>
+          Administra tus direcciones de entrega.
+        </p>
+
+      </div>
+
+      <ion-icon
+        class="flecha"
+        name="chevron-forward-outline">
+      </ion-icon>
+
+    </div>
+
+  </section>
+
 </ion-content>
+
+
+<!-- BARRA INFERIOR -->
+
+<ion-footer>
+
+  <ion-toolbar>
+
+    <div class="barra-navegacion">
+
+
+      <!-- INICIO -->
+
+      <div class="nav-item activo">
+
+        <ion-icon name="home-outline"></ion-icon>
+
+        <span>Inicio</span>
+
+      </div>
+
+
+      <!-- PEDIDOS -->
+
+      <div class="nav-item">
+
+        <ion-icon name="cube-outline"></ion-icon>
+
+        <span>Pedidos</span>
+
+      </div>
+
+
+      <!-- DIRECCIONES -->
+
+      <div
+        class="nav-item"
+        routerLink="/mis-direcciones">
+
+        <ion-icon name="location-outline"></ion-icon>
+
+        <span>Direcciones</span>
+
+      </div>
+
+
+      <!-- PERFIL -->
+
+      <div class="nav-item">
+
+        <ion-icon name="person-outline"></ion-icon>
+
+        <span>Perfil</span>
+
+      </div>
+
+    </div>
+
+  </ion-toolbar>
+
+</ion-footer>

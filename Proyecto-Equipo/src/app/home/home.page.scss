@@ -1,27 +1,294 @@
-'ñ#container {
-  text-align: center;
+/* ==============================
+   FONDO GENERAL
+   ============================== */
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-content {
+  --background: #f5f7fa;
 }
 
-#container strong {
+
+/* ==============================
+   ENCABEZADO
+   ============================== */
+
+ion-header {
+  box-shadow: none;
+}
+
+ion-toolbar {
+  --background: #ffffff;
+  --color: #1e293b;
+  --border-width: 0;
+  padding: 5px 10px;
+}
+
+ion-title {
   font-size: 20px;
-  line-height: 26px;
+  font-weight: 700;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
 
-  color: #8c8c8c;
+/* ==============================
+   BIENVENIDA
+   ============================== */
 
+.bienvenida {
+  padding: 28px 20px 12px;
+}
+
+.saludo {
   margin: 0;
+  color: #64748b;
+  font-size: 14px;
 }
 
-#container a {
-  text-decoration: none;
+.bienvenida h1 {
+  margin: 6px 0;
+  color: #0f172a;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.descripcion {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* ==============================
+   TARJETA PRINCIPAL
+   ============================== */
+
+.tarjeta-principal {
+  background: #ffffff;
+  margin: 16px 20px 26px;
+  padding: 22px;
+  border-radius: 20px;
+
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.08);
+}
+
+.icono-principal {
+  width: 58px;
+  height: 58px;
+
+  background: #dbeafe;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 16px;
+}
+
+.icono-principal ion-icon {
+  font-size: 32px;
+  color: #2563eb;
+}
+
+.tarjeta-principal h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.tarjeta-principal p {
+  margin: 8px 0 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* ==============================
+   BOTÓN SOLICITAR PIPA
+   ============================== */
+
+ion-button {
+  --background: #2563eb;
+  --background-activated: #1d4ed8;
+  --background-hover: #1d4ed8;
+  --border-radius: 12px;
+
+  height: 48px;
+
+  margin-top: 18px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  text-transform: none;
+
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.20);
+}
+
+
+/* ==============================
+   SECCIÓN ACCESOS RÁPIDOS
+   ============================== */
+
+.seccion {
+  padding: 0 20px 20px;
+}
+
+.seccion > h2 {
+  margin: 0 0 13px;
+
+  color: #0f172a;
+
+  font-size: 19px;
+
+  font-weight: 700;
+}
+
+
+/* ==============================
+   TARJETAS DE ACCESO
+   ============================== */
+
+.tarjeta {
+  background: #ffffff;
+
+  min-height: 72px;
+
+  padding: 14px;
+
+  margin-bottom: 12px;
+
+  border-radius: 17px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+.icono-tarjeta {
+  width: 45px;
+  height: 45px;
+
+  background: #eff6ff;
+
+  border-radius: 13px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.icono-tarjeta ion-icon {
+  color: #2563eb;
+  font-size: 23px;
+}
+
+.texto-tarjeta {
+  flex: 1;
+}
+
+.texto-tarjeta h3 {
+  margin: 0;
+
+  color: #1e293b;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+.texto-tarjeta p {
+  margin: 4px 0 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.3;
+}
+
+.flecha {
+  color: #94a3b8;
+
+  font-size: 20px;
+}
+
+
+/* ==============================
+   BARRA INFERIOR
+   ============================== */
+
+ion-footer {
+  box-shadow: 0 -3px 12px rgba(15, 23, 42, 0.08);
+}
+
+ion-footer ion-toolbar {
+  --background: #ffffff;
+  --border-width: 0;
+}
+
+.barra-navegacion {
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  padding: 8px 0 7px;
+}
+
+.nav-item {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 3px;
+
+  min-width: 60px;
+
+  color: #64748b;
+
+  font-size: 11px;
+
+  transition: 0.2s;
+}
+
+.nav-item ion-icon {
+  font-size: 22px;
+}
+
+.nav-item.activo {
+  color: #2563eb;
+
+  font-weight: 600;
+}
+
+
+/* ==============================
+   EFECTO AL TOCAR
+   ============================== */
+
+.tarjeta:active {
+  transform: scale(0.98);
+}
+
+ion-button:active {
+  transform: scale(0.98);
 }

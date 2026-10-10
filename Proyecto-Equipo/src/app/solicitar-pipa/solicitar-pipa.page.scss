@@ -1,0 +1,225 @@
+ion-content {
+  --background: #f5f5f5;
+}
+
+ion-toolbar {
+  --background: #ffffff;
+  --color: #1f2937;
+}
+
+ion-title {
+  font-weight: 700;
+}
+
+
+/* ==============================
+   CONTENEDOR
+   ============================== */
+
+.contenedor {
+  padding: 22px 20px 30px;
+}
+
+
+/* ==============================
+   TITULOS
+   ============================== */
+
+.contenedor h1 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.descripcion {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.contenedor h2 {
+  color: #1f2937;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 22px 0 12px;
+}
+
+
+/* ==============================
+   OPCIONES DE CAPACIDAD
+   ============================== */
+
+.opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.opcion {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border: 2px solid transparent;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.opcion.seleccionada {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.icono-opcion {
+  width: 45px;
+  height: 45px;
+  background: #dbeafe;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icono-opcion ion-icon {
+  color: #2563eb;
+  font-size: 25px;
+}
+
+.informacion-opcion {
+  flex: 1;
+}
+
+.opcion h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.opcion p {
+  margin: 4px 0 0;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.check {
+  margin-left: auto;
+  color: #2563eb;
+  font-size: 24px;
+}
+
+
+/* ==============================
+   CAMPO OTRA CANTIDAD
+   ============================== */
+
+ion-input {
+  --background: #ffffff;
+  --color: #1f2937;
+  --placeholder-color: #6b7280;
+  --border-color: #cbd5e1;
+  --highlight-color: #2563eb;
+
+  margin-top: 2px;
+  margin-bottom: 10px;
+
+  color: #1f2937;
+
+  border-radius: 12px;
+}
+
+ion-input::part(label) {
+  color: #1f2937;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+ion-input::part(native) {
+  color: #1f2937;
+}
+
+
+/* ==============================
+   DIRECCIÓN
+   ============================== */
+
+.direccion {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.direccion > ion-icon:first-child {
+  color: #2563eb;
+  font-size: 27px;
+}
+
+.direccion div {
+  flex: 1;
+}
+
+.direccion h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 15px;
+}
+
+.direccion p {
+  margin: 4px 0 0;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.flecha {
+  color: #9ca3af;
+  font-size: 20px;
+}
+
+
+/* ==============================
+   TEXTAREA
+   ============================== */
+
+ion-textarea {
+  --background: #ffffff;
+  --border-radius: 15px;
+  --padding-start: 15px;
+  --padding-end: 15px;
+  --padding-top: 13px;
+
+  --color: #1f2937;
+  --placeholder-color: #6b7280;
+
+  color: #1f2937;
+
+  min-height: 110px;
+
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ==============================
+   BOTÓN
+   ============================== */
+
+.boton-continuar {
+  --background: #2563eb;
+  --background-activated: #1d4ed8;
+  --border-radius: 12px;
+
+  height: 50px;
+
+  margin-top: 25px;
+
+  font-weight: 600;
+}

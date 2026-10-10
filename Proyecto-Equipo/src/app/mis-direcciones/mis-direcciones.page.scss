@@ -1,0 +1,229 @@
+ion-content {
+  --background: #f5f5f5;
+}
+
+ion-toolbar {
+  --background: #ffffff;
+  --color: #1f2937;
+}
+
+ion-title {
+  font-weight: 700;
+}
+
+
+/* CONTENEDOR */
+
+.contenedor {
+  padding: 22px 20px 30px;
+}
+
+
+/* TITULOS */
+
+.contenedor h1 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.descripcion {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.contenedor h2 {
+  color: #1f2937;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* DIRECCIÓN */
+
+.direccion {
+  background: #ffffff;
+
+  padding: 16px;
+
+  border-radius: 16px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  border: 2px solid transparent;
+
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+
+  cursor: pointer;
+}
+
+.direccion.seleccionada {
+  border-color: #2563eb;
+
+  background: #eff6ff;
+}
+
+
+/* ICONO */
+
+.icono-direccion {
+  width: 45px;
+
+  height: 45px;
+
+  background: #dbeafe;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.icono-direccion ion-icon {
+  color: #2563eb;
+
+  font-size: 25px;
+}
+
+
+/* INFORMACIÓN */
+
+.informacion {
+  flex: 1;
+}
+
+.informacion h3 {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.informacion p {
+  margin: 5px 0 0;
+
+  color: #6b7280;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+
+/* CHECK */
+
+.check {
+  color: #2563eb;
+
+  font-size: 24px;
+}
+
+
+/* BOTÓN AGREGAR */
+
+.boton-agregar {
+  --color: #2563eb;
+
+  --border-color: #2563eb;
+
+  --border-radius: 12px;
+
+  height: 48px;
+
+  margin-top: 18px;
+
+  text-transform: none;
+
+  font-weight: 600;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+  background: #ffffff;
+
+  padding: 18px;
+
+  margin-top: 20px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+}
+
+
+/* CAMPOS */
+
+ion-input,
+ion-textarea {
+  --background: #ffffff;
+
+  --color: #1f2937;
+
+  --placeholder-color: #6b7280;
+
+  --highlight-color: #2563eb;
+
+  margin-top: 12px;
+
+  color: #1f2937;
+}
+
+ion-input::part(label),
+ion-textarea::part(label) {
+  color: #1f2937;
+
+  font-weight: 600;
+}
+
+
+/* BOTÓN GUARDAR */
+
+.boton-guardar {
+  --background: #2563eb;
+
+  --border-radius: 12px;
+
+  height: 48px;
+
+  margin-top: 18px;
+
+  text-transform: none;
+
+  font-weight: 600;
+}
+
+
+/* BOTÓN CONTINUAR */
+
+.boton-continuar {
+  --background: #2563eb;
+
+  --background-activated: #1d4ed8;
+
+  --border-radius: 12px;
+
+  height: 50px;
+
+  margin-top: 25px;
+
+  text-transform: none;
+
+  font-weight: 600;
+}
