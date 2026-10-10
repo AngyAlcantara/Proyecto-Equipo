@@ -7,36 +7,48 @@
   <link rel="stylesheet" href="fecha-horario.css">
 </head>
 <body>
-
-  <main class="card-container">
+  <div class="container">
+    
+    <!-- Encabezado con flecha y subtítulo -->
     <header class="header">
-      <span class="back-icon" aria-label="Volver">&larr;</span>
-      <div class="header-text">
-        <h1 class="screen-title">Fecha y horario</h1>
-        <h2 class="app-title">Pipas Juárez</h2>
+      <div class="header-top">
+        <button class="btn-back" onclick="history.back()">&larr;</button>
+        <h2>Fecha y horario</h2>
       </div>
+      <p class="subtitle">Pipas Juárez</p>
     </header>
 
-    <form class="schedule-form">
-      <div class="input-group">
-        <label for="fecha">Fecha</label>
-        <input type="text" id="fecha" value="[25/09/2026]" readonly>
-      </div>
+    <!-- Formulario con recuadros vacíos -->
+    <main class="form-container">
+      <form id="schedule-form">
+        
+        <!-- Campo Fecha -->
+        <div class="form-group">
+          <label for="fecha">Fecha</label>
+          <input type="text" id="fecha" name="fecha" placeholder="[DD/MM/AAAA]">
+        </div>
 
-      <div class="input-group">
-        <label>Horario</label>
-        <input type="text" class="schedule-option" value="[9:00 - 11:00]" readonly>
-        <input type="text" class="schedule-option" value="[11:0 - 13:00]" readonly>
-      </div>
+        <!-- Campos de Horarios -->
+        <div class="form-group">
+          <label for="horario1">Horario</label>
+          <input type="text" id="horario1" name="horario1" placeholder="[00:00 - 00:00]">
+        </div>
 
-      <div class="input-group">
-        <label for="otro">Otro</label>
-        <input type="text" id="otro" placeholder="">
-      </div>
+        <div class="form-group">
+          <input type="text" id="horario2" name="horario2" placeholder="[00:00 - 00:00]">
+        </div>
 
-      <button type="submit" class="submit-btn">CONTINUAR</button>
-    </form>
-  </main>
+        <!-- Campo Otro -->
+        <div class="form-group">
+          <label for="otro">Otro</label>
+          <input type="text" id="otro" name="otro" placeholder="">
+        </div>
 
+        <!-- Botón Continuar -->
+        <button type="submit" class="btn-submit">CONTINUAR</button>
+      </form>
+    </main>
+
+  </div>
 </body>
 </html>
